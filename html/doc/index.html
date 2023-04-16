@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Myour - Personal Portfolio Template</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/table.css">
+</head>
+<body>
+	<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Myour - Personal Portfolio Template</span>
+	</header>	
+	<div class="dt-container dt-container_flex">
+		<aside class="dt-navbar">
+			<nav class="dt-navbar__nav">
+				<div class="dt-navbar__section">
+					<ul class="dt-navbar__list">
+						<li><a href="#files_structure" class="dt-navbar__link">File structure</a></li>
+						<li>
+							<a href="#settings" class="dt-navbar__link">Settings</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#settings_scss" class="dt-navbar__link dt-navbar__link_nested">.SCSS Edit</a></li>
+								<li><a href="#settings_colors" class="dt-navbar__link dt-navbar__link_nested">Theme Colors</a></li>
+								<li><a href="#include_fonts" class="dt-navbar__link dt-navbar__link_nested">Include Fonts</a></li>
+								<li><a href="#include_icons" class="dt-navbar__link dt-navbar__link_nested">Edit Icons</a></li>
+							</ul>
+						</li>
+						<li><a href="#conts" class="dt-navbar__link">Contact Form PHP</a></li>
+						<li>
+							<a href="#html_structure" class="dt-navbar__link">HTML structure</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#html_structure_header" class="dt-navbar__link dt-navbar__link_nested">"Header" Section</a></li>
+								<li><a href="#html_structure_footer" class="dt-navbar__link dt-navbar__link_nested">"Footer" Section</a></li>
+								<li><a href="#html_structure_started" class="dt-navbar__link dt-navbar__link_nested">"Started" Section</a></li>
+								<li><a href="#html_structure_about" class="dt-navbar__link dt-navbar__link_nested">"About" Section</a></li>
+								<li><a href="#html_structure_resume" class="dt-navbar__link dt-navbar__link_nested">"Resume" Section</a></li>
+								<li><a href="#html_structure_portfolio" class="dt-navbar__link dt-navbar__link_nested">"Portfolio" Section</a></li>
+								<li><a href="#html_structure_contacts" class="dt-navbar__link dt-navbar__link_nested">"Contact" Section</a></li>
+							</ul>
+						</li>
+						<li><a href="#icons" class="dt-navbar__link">Icons</a></li>
+						<li><a href="#credits" class="dt-navbar__link">Credits</a></li>
+					</ul>
+				</div>		
+			</nav>
+		</aside>	
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<div class="dt-section">
+				<h2 class="dt-title">Myour - Personal Portfolio Template</h2>
+				<p>by: beshleyua</p>
+				<p>Thank you for your purchase. If you have any questions, mail me to - <a href="mailto:beshleyua@gmail.com">beshleyua@gmail.com</a></p>
+			</div>		
+			<article id="files_structure" class="dt-section">
+				<h2 class="dt-title">File structure</h2>
+				<p>After unpacking archive, you'll see this structure:</p>
+				<div class="dt-info-block">
+					<pre class="code language-html">
+						<code>
+main/
+│ 
+├──doc/
+├──template/	
+│──│──css/
+│──│──│──animate.css
+│──│──│──basic.css
+│──│──│──layout.css
+│──│──│──fontawesome.css
+│──│──│──jarallax.css
+│──│──│──magnific-popup.css
+│──│──│──owl.carousel.css
+│──│──│──swiper.css
+│──│──│──theme-colors/
+│──│──webfonts/
+│──│──images/
+│──│──js/
+│──│──│──scripts.js
+│──│──│──imagesloaded.pkgd.js
+│──│──│──jquery.min.js
+│──│──│──jquery.validate.js
+│──│──│──magnific-popup.js
+│──│──│──isotope.pkgd.js
+│──│──│──jarallax.js
+│──│──│──jarallax-element.js
+│──│──│──jarallax-video.js
+│──│──│──velocity.js
+│──│──│──swiper.js
+│──│──│──owl.carousel.js
+│──│──│──typed.js
+│──│──style/
+│──│──│──basic.scss
+│──│──│──layout.scss
+│──│──│──settings.scss
+│──│──mailer/
+│──│──│──feedback.php
+│──│──│──form_setting.php
+│──│──index.html
+│──│──index-2.html
+│──│──index-3.html
+│──│──index-slider.html
+│──│──index-video.html
+						</code>
+					</pre>
+				</div>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">css</span> - all CSS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">basic.css</span> - CSS for basic styles</li>
+							<li><span class="dt-label dt-label_bold">layout.css</span> - CSS for template layout</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">scss</span> - all SCSS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">settings.less</span> - SCSS for setting template</li>
+							<li><span class="dt-label dt-label_bold">basic.less</span> - SCSS for basic styles</li>
+							<li><span class="dt-label dt-label_bold">layout.less</span> - SCSS for template layout</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">js</span> - all JS for pages
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">scripts.js</span> - Main JS for template</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+			<article id="settings" class="dt-section">
+				<h2 class="dt-title">Settings</h2>
+				<p>
+					<br />
+				</p>
+				<h2 class="dt-title" id="settings_scss">.SCSS Edit</h2>
+				<p>
+					For editing styling, colors, sizes of the template you can use following settings, folder "/style/_settings.scss". <strong>You need to compile the .sсss files to "/css" folder. You can use the "Koala" program.</strong>
+				</p>
+				<table>
+					<thead>
+					<tr>
+						<th>Name</th>
+						<th>Value</th>
+						<th>Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Colors setting for template elements</span></td>
+						</tr>
+						<tr>
+							<td>$default_bg</td>
+							<td>#373b40</td>
+							<td>Background color</td>
+						</tr>
+                        <tr>
+							<td>$extra_bg</td>
+							<td>#585d65</td>
+							<td>Background extra color</td>
+						</tr>
+						 <tr>
+							<td>$lines_color</td>
+							<td>#585d65</td>
+							<td>Lines color</td>
+						</tr>
+                        <tr>
+							<td>$default_color</td>
+							<td>#fff</td>
+							<td>Default color</td>
+						</tr>
+						<tr>
+							<td>$extra_color</td>
+							<td>#999</td>
+							<td>Extra color</td>
+						</tr>
+						<tr>
+							<td>$light_color</td>
+							<td>#eee</td>
+							<td>Light color</td>
+						</tr>
+						<tr>
+							<td>$white_color</td>
+							<td>#fff</td>
+							<td>White color</td>
+						</tr>
+						<tr>
+							<td>$active_color</td>
+							<td>#68e0cf</td>
+							<td>Template color</td>
+						</tr>
+						<tr>
+							<td>$active_profile_color</td>
+							<td>#68e0cf</td>
+							<td>Template color</td>
+						</tr>
+						<tr>
+							<td>$error_color</td>
+							<td>red</td>
+							<td>Error field color</td>
+						</tr>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Fonts setting for template</span></td>
+						</tr>
+						<tr>
+							<td>$default_font</td>
+							<td>'Poppins'</td>
+							<td>Default font for template</td>
+						</tr>
+						<tr>
+							<td>$extra_font</td>
+							<td>'Mr Dafoe'</td>
+							<td>Default font for template</td>
+						</tr>
+						<tr>
+							<td colspan="3"><span class="dt-label dt-label_bold">Sizes setting for template</span></td>
+						</tr>
+						<tr>
+							<td>$logo_size</td>
+							<td>18px</td>
+							<td>Large Size</td>
+						</tr>
+						<tr>
+							<td>$title_size</td>
+							<td>4.2vw</td>
+							<td>Large Size</td>
+						</tr>
+						<tr>
+							<td>$section_title_size</td>
+							<td>55px</td>
+							<td>Large Size</td>
+						</tr>
+						<tr>
+							<td>$large_size</td>
+							<td>18px</td>
+							<td>Large Size</td>
+						</tr>
+						<tr>
+							<td>$extra_large_size</td>
+							<td>16px</td>
+							<td>Default Size</td>
+						</tr>
+						<tr>
+							<td>$default_size</td>
+							<td>14px</td>
+							<td>Small Size</td>
+						</tr>
+						<tr>
+							<td>$small_size</td>
+							<td>12px</td>
+							<td>Small Size</td>
+						</tr>
+						<tr>
+							<td>$extra_small_size</td>
+							<td>11px</td>
+							<td>Small Size</td>
+						</tr>
+						<tr>
+							<td>$btn_size</td>
+							<td>12px</td>
+							<td>Small Size</td>
+						</tr>
+						<tr>
+							<td>$default_icon_size</td>
+							<td>32px</td>
+							<td>Default icons size</td>
+						</tr>
+						<tr>
+							<td>$socials_icon_size</td>
+							<td>16px</td>
+							<td>Default Socials icons size</td>
+						</tr>
+						<tr>
+							<td>$line_height</td>
+							<td>26px</td>
+							<td>Default Line-height for text</td>
+						</tr>
+					</tbody>
+				</table>				
+			</article>
+			<article id="settings_colors" class="dt-section">
+				<h2 class="dt-title">Theme Colors</h2>
+				<p>
+					To change the theme color of the template, just add a line to the "head":
+					&lt;link rel="stylesheet" href="css/theme-colors/green.css" /&gt; - (green.css, blue.css, orange.css, etc.)
+				</p>
+				<p>All Theme Colors:</p>
+				<div class="dt-info-block">
+					<pre class="code language-html">
+						<code>
+│──│──css/theme-colors/green.css
+│──│──css/theme-colors/blue.css
+│──│──css/theme-colors/red.css
+│──│──css/theme-colors/orange.css
+│──│──css/theme-colors/yellow.css
+│──│──css/theme-colors/brown.css
+│──│──css/theme-colors/purple.css
+│──│──css/theme-colors/green_light.css
+│──│──css/theme-colors/yellow_light.css
+│──│──css/theme-colors/beige.css
+						</code>
+					</pre>
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Include of fonts</h2>
+				<p>To use fonts, you must add one tag 'link' from section below to head section.</p>
+				<pre class="code language-html">
+					<code>
+&lt;link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet"&gt;
+&lt;link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet"&gt;
+					</code>
+				</pre>	
+				<p>
+					Next step is to set the $default_font option with using settings table.
+				</p>
+			</article>
+			<article id="include_icons" class="dt-section">
+				<h2 class="dt-title">Edit Icons</h2>
+				<p>In this template are defined some of classes for icons, see all icons here - <a href="https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free">https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free</a>, use search and select icons.</p>
+				<p>Copy icon class (for example "fas fa-code") and add to tag in html file like this:</p>
+				<pre class="code language-html">
+					<code>
+&lt;span class="fas fa-code"&gt;&lt;/span&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="conts" class="dt-section">
+				<h2 class="dt-title">Contact Form PHP</h2>
+				<p>To modify the form is submitted, you can use the following settings, folders "/mailer/form_setting.php" and "/mailer/feedback.php"</p>				
+			</article>
+			<article id="html_structure" class="dt-section">
+				<h2 class="dt-title">HTML structure</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!doctype html&gt;
+&lt;html lang="en-US"&gt;
+&lt;head&gt;
+
+	&lt;!-- Meta --&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /&gt;
+	&lt;meta name="description" content="Personal Portfolio Template" /&gt;
+	&lt;meta name="keywords" content="resposnive, resume, personal, personal portfolio, cv, myour, portfolio" /&gt;
+	&lt;meta name="author" content="beshleyua" /&gt;
+
+	&lt;!-- Title --&gt;
+	&lt;title&gt;Myour - Personal Portfolio Template&lt;/title&gt;
+
+	&lt;!-- Fonts --&gt;
+	&lt;link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet"&gt;
+	&lt;link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet"&gt;
+
+	&lt;!-- Styles --&gt;
+	&lt;link rel="stylesheet" href="css/basic.css" /&gt;
+	&lt;link rel="stylesheet" href="css/layout.css" /&gt;
+	&lt;link rel="stylesheet" href="css/magnific-popup.css" /&gt;
+	&lt;link rel="stylesheet" href="css/animate.css" /&gt;
+	&lt;link rel="stylesheet" href="css/jarallax.css" /&gt;
+	&lt;link rel="stylesheet" href="css/owl.carousel.css" /&gt;
+	&lt;link rel="stylesheet" href="css/swiper.css" /&gt;
+	&lt;link rel="stylesheet" href="css/fontawesome.css" /&gt;
+
+	&lt;!-- Theme Colors
+	&lt;link rel="stylesheet" href="css/theme-colors/blue.css" /&gt;
+	&lt;link rel="stylesheet" href="css/theme-colors/green.css" /&gt;
+	&lt;link rel="stylesheet" href="css/theme-colors/orange.css" /&gt;
+	&lt;link rel="stylesheet" href="css/theme-colors/brown.css" /&gt;
+	&lt;link rel="stylesheet" href="css/theme-colors/purple.css" /&gt;
+	&lt;link rel="stylesheet" href="css/theme-colors/red.css" /&gt;
+	&lt;link rel="stylesheet" href="css/theme-colors/beige.css" /&gt;
+	&lt;link rel="stylesheet" href="css/theme-colors/green_light.css" /&gt;
+	&lt;link rel="stylesheet" href="css/theme-colors/yellow.css" /&gt;
+	&lt;link rel="stylesheet" href="css/theme-colors/yellow_light.css" /&gt;
+	--&gt;
+		
+	&lt;!--[if lt IE 9]&gt;
+	&lt;script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"&gt;&lt;/script&gt;
+	&lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+
+	&lt;link rel="shortcut icon" href="images/favicons/favicon.ico"&gt;
+
+&lt;/head&gt;
+
+&lt;body class="home"&gt;
+
+	&lt;!-- Preloader --&gt;
+	&lt;div class="preloader"&gt;
+		&lt;div class="box-1"&gt;
+			&lt;div class="centrize full-width"&gt;
+				&lt;div class="vertical-center"&gt;
+					&lt;div class="spinner"&gt;
+						&lt;div class="lines"&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="box-2"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	
+	&lt;!-- Container --&gt;
+	&lt;div class="container"&gt;
+	
+		&lt;!-- Header --&gt;
+		&lt;header class="header"&gt;
+
+			...
+
+		&lt;/header&gt;
+		
+		&lt;!-- Wrapper --&gt;
+		&lt;div class="wrapper"&gt;
+
+			&lt;!-- Background --&gt;
+			&lt;div class="background-bg"&gt;
+				&lt;div class="background-filter"&gt;
+					&lt;div class="background-img" style="background-image: url(images/man.jpg);"&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;!-- Section Started --&gt;
+			&lt;div class="section started" id="section-started"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section About --&gt;
+			&lt;div class="section about" id="section-about"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section Service --&gt;
+			&lt;div class="section service" id="section-services"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section Pricing --&gt;
+			&lt;div class="section pricing" id="section-pricing"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section Resume --&gt;
+			&lt;div class="section resume" id="section-experience"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section Resume --&gt;
+			&lt;div class="section resume" id="section-education"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section Design Skills --&gt;
+			&lt;div class="section skills" id="section-skills"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section Languages Skills --&gt;
+			&lt;div class="section skills" id="section-skills-lang"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section Coding Skills --&gt;
+			&lt;div class="section skills" id="section-skills-code"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section Testimonials --&gt;
+			&lt;div class="section testimonials" id="section-testimonials"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section Clients --&gt;
+			&lt;div class="section clients" id="section-clients"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Works --&gt;
+			&lt;div class="section works" id="section-portfolio"&gt;
+				...
+			&lt;/div&gt;
+
+			&lt;!-- Section Contacts Info &gt;--&gt;
+			&lt;div class="section contacts" id="section-contacts"&gt;
+				...
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+		
+		&lt;!-- Footer --&gt;
+		&lt;footer class="footer"&gt;
+			...
+		&lt;/footer&gt;
+		
+	&lt;/div&gt;
+
+	&lt;!-- Scripts --&gt;
+	&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/velocity.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.validate.js"&gt;&lt;/script&gt;
+	&lt;script src="js/magnific-popup.js"&gt;&lt;/script&gt;
+	&lt;script src="js/typed.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jarallax.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jarallax-video.js"&gt;&lt;/script&gt;
+	&lt;script src="js/jarallax-element.js"&gt;&lt;/script&gt;
+	&lt;script src="js/imagesloaded.pkgd.js"&gt;&lt;/script&gt;
+	&lt;script src="js/isotope.pkgd.js"&gt;&lt;/script&gt;
+	&lt;script src="js/owl.carousel.js"&gt;&lt;/script&gt;
+	&lt;script src="js/swiper.js"&gt;&lt;/script&gt;
+	&lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="html_structure_header" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Header"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Header --&gt;
+&lt;header class="header"&gt;
+
+	&lt;!-- logo --&gt;
+	&lt;div class="logo"&gt;
+		&lt;a href="#"&gt;
+			&lt;img class="logo-img" src="images/logo.png" alt="" /&gt;
+			&lt;span class="logo-lnk"&gt;Joé &lt;br /&gt;Wilson&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+
+	&lt;!-- menu button --&gt;
+	&lt;a href="#" class="menu-btn"&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;
+		
+	&lt;!-- download cv button --&gt;
+	&lt;a href="#" class="btn download-cv-btn"&gt;
+		&lt;span class="animated-button"&gt;&lt;span&gt;Download CV&lt;/span&gt;&lt;/span&gt;
+		&lt;i class="icon fas fa-download"&gt;&lt;/i&gt;
+	&lt;/a&gt;
+
+	&lt;!-- header sidebar --&gt;
+	&lt;div class="header-sidebar"&gt;
+
+		&lt;!-- top menu --&gt;						
+		&lt;div class="top-menu"&gt;
+			&lt;div class="top-menu-nav"&gt;	
+				&lt;div class="menu-topmenu-container"&gt;
+					&lt;ul class="menu"&gt;
+						&lt;li class="menu-item current-menu-item menu-item-has-children"&gt;
+							&lt;a href="#section-started"&gt;
+								&lt;span class="animated-button"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;/span&gt;
+							&lt;/a&gt;
+							&lt;ul class="sub-menu"&gt;
+								&lt;li class="menu-item current-menu-item"&gt;&lt;a href="index.html"&gt;Home 1&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="menu-item"&gt;&lt;a href="index-2.html"&gt;Home 2&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="menu-item"&gt;&lt;a href="index-3.html"&gt;Home 3&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="menu-item"&gt;&lt;a href="index-slider.html"&gt;Home Slider&lt;/a&gt;&lt;/li&gt;
+								&lt;li class="menu-item"&gt;&lt;a href="index-video.html"&gt;Home Video&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+						&lt;li class="menu-item"&gt;
+							&lt;a href="#section-about"&gt;
+								&lt;span class="animated-button"&gt;&lt;span&gt;About&lt;/span&gt;&lt;/span&gt;
+							&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class="menu-item"&gt;
+							&lt;a href="#section-experience"&gt;
+								&lt;span class="animated-button"&gt;&lt;span&gt;Resume&lt;/span&gt;&lt;/span&gt;
+							&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class="menu-item"&gt;
+							&lt;a href="#section-portfolio"&gt;
+								&lt;span class="animated-button"&gt;&lt;span&gt;Portfolio&lt;/span&gt;&lt;/span&gt;
+							&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class="menu-item"&gt;
+							&lt;a href="#section-contacts"&gt;
+								&lt;span class="animated-button"&gt;&lt;span&gt;Contact&lt;/span&gt;&lt;/span&gt;
+							&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+&lt;/header&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_footer" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Footer"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Footer --&gt;
+&lt;footer class="footer"&gt;
+	&lt;div class="socials"&gt;
+		&lt;a target="_blank" href="https://www.facebook.com/"&gt;
+			&lt;i class="icon fab fa-facebook-f"&gt;&lt;/i&gt;
+		&lt;/a&gt;
+		&lt;a target="_blank" href="https://www.instagram.com/"&gt;
+			&lt;i class="icon fab fa-instagram"&gt;&lt;/i&gt;
+		&lt;/a&gt;
+		&lt;a target="_blank" href="https://dribbble.com/"&gt;
+			&lt;i class="icon fab fa-dribbble"&gt;&lt;/i&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_started" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Started" sections</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Started --&gt;
+&lt;div class="section started" id="section-started"&gt;
+	&lt;div class="centrize full-width"&gt;
+		&lt;div class="vertical-center"&gt;
+
+			&lt;!-- title --&gt;
+			&lt;h1 class="h-title"&gt;
+				Joé &lt;br /&gt;Wilson
+			&lt;/h1&gt;
+
+			&lt;!-- content started --&gt;
+			&lt;div class="started-content"&gt;
+
+				&lt;!-- subtitle --&gt;
+				&lt;div class="h-subtitles"&gt;
+					&lt;div class="h-subtitle typing-subtitle"&gt;
+						&lt;p&gt;Consultant and Mentor&lt;/p&gt;
+						&lt;p&gt;Web Designer&lt;/p&gt;
+						&lt;p&gt;Programmer&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;span class="typed-subtitle"&gt;&lt;/span&gt;
+				&lt;/div&gt;
+
+				&lt;!-- text --&gt;
+				&lt;div class="h-text"&gt;
+					Hello! I am Web Developer from United States, New York. I have rich experience in web site design and building, also I am good at wordpress. I love to talk with you about our unique.
+				&lt;/div&gt;
+
+				&lt;!-- button --&gt;
+				&lt;a href="#" class="btn"&gt;
+					&lt;span class="animated-button"&gt;&lt;span&gt;Contact Me&lt;/span&gt;&lt;/span&gt;
+					&lt;i class="icon fas fa-chevron-right"&gt;&lt;/i&gt;
+				&lt;/a&gt;
+
+				&lt;!-- mosue button --&gt;
+				&lt;a href="#" class="btn mouse-btn" style="display: none;"&gt;
+					&lt;i class="icon fas fa-chevron-down"&gt;&lt;/i&gt;
+				&lt;/a&gt;
+
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_about" class="dt-section">
+				<h2 class="dt-title">HTML structure of "About" sections</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section About --&gt;
+&lt;div class="section about" id="section-about"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;About Me&lt;/div&gt;
+			&lt;div class="subtitle"&gt;My story&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- text --&gt;
+		&lt;div class="cols"&gt;
+			&lt;div class="col"&gt;
+				&lt;div class="single-post-text"&gt;
+					&lt;p&gt;
+						Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="col"&gt;
+				&lt;div class="single-post-text"&gt;
+					&lt;p&gt;
+						Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="col col-full"&gt;
+				&lt;div class="single-post-text"&gt;
+					&lt;p&gt;
+						Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- info list --&gt;
+		&lt;div class="info-list"&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;strong&gt;Age:&lt;/strong&gt; 24&lt;/li&gt;
+				&lt;li&gt;&lt;strong&gt;Residence:&lt;/strong&gt; USA&lt;/li&gt;
+				&lt;li&gt;&lt;strong&gt;Freelance:&lt;/strong&gt; Available&lt;/li&gt;
+				&lt;li&gt;&lt;strong&gt;Address:&lt;/strong&gt; San Francisco&lt;/li&gt;
+				&lt;li&gt;&lt;strong&gt;Phone:&lt;/strong&gt; +1 256 254 84 56&lt;/li&gt;
+				&lt;li&gt;&lt;strong&gt;E-mail:&lt;/strong&gt; alejandroa@gmail.com&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+
+		&lt;div class="clear"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Section Service --&gt;
+&lt;div class="section service" id="section-services"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Services&lt;/div&gt;
+			&lt;div class="subtitle"&gt;What I Do&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- services items --&gt;
+		&lt;div class="service-items"&gt;
+
+			&lt;div class="service-col"&gt;
+				&lt;div class="service-item"&gt;
+					&lt;div class="icon"&gt;&lt;i class="fas fa-brain"&gt;&lt;/i&gt;&lt;/div&gt;
+					&lt;div class="name"&gt;Economic &lt;br /&gt;Science&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Economics is a social science concerned with the production, consumption of goods and services.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			
+			&lt;div class="service-col"&gt;
+				&lt;div class="service-item"&gt;
+					&lt;div class="icon"&gt;&lt;i class="icon fas fa-ad"&gt;&lt;/i&gt;&lt;/div&gt;
+					&lt;div class="name"&gt;Marketing &lt;br /&gt;& Advertising&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Advertising Management though is a complex process of employing various media to sell a product or service.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="service-col"&gt;
+				&lt;div class="service-item"&gt;
+					&lt;div class="icon"&gt;&lt;i class="icon fab fa-chrome"&gt;&lt;/i&gt;&lt;/div&gt;
+					&lt;div class="name"&gt;Web &lt;br /&gt;Development&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							The web development process includes: web design, web content, client-side / server-side scripting and network security configuration.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="service-col"&gt;
+				&lt;div class="service-item"&gt;
+					&lt;div class="icon"&gt;&lt;i class="icon fas fa-headphones"&gt;&lt;/i&gt;&lt;/div&gt;
+					&lt;div class="name"&gt;Music &lt;br /&gt;Writing&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Sheet music is the basic form in which Western classical music is notated so that it can be learned and performed by solo singers.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="service-col"&gt;
+				&lt;div class="service-item"&gt;
+					&lt;div class="icon"&gt;&lt;i class="icon fas fa-gamepad"&gt;&lt;/i&gt;&lt;/div&gt;
+					&lt;div class="name"&gt;Game &lt;br /&gt;Development&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Come Up With a Game Idea. An idea is the first thing that comes to mind when a game is being described before creating.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="service-col"&gt;
+				&lt;div class="service-item"&gt;
+					&lt;div class="icon"&gt;&lt;i class="fas fa-video"&gt;&lt;/i&gt;&lt;/div&gt;
+					&lt;div class="name"&gt;Photography &lt;br /&gt;& Video&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Sessions. If you are a photographer that spends most of the time in a portrait studio, you can charge for your session.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class="clear"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Section Pricing --&gt;
+&lt;div class="section pricing" id="section-pricing"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Pricing&lt;/div&gt;
+			&lt;div class="subtitle"&gt;My Plans&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- pricing items --&gt;
+		&lt;div class="content-carousel"&gt;
+			&lt;div class="owl-carousel" data-slidesview="2" data-slidesview_mobile="1"&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="pricing-item"&gt;
+						&lt;div class="icons"&gt;&lt;i class="fas fa-star"&gt;&lt;/i&gt;&lt;/div&gt;
+						&lt;div class="name"&gt;Basic&lt;/div&gt;
+						&lt;div class="amount"&gt;
+							&lt;span class="number"&gt;
+								&lt;span class="dollar"&gt;$&lt;/span&gt;
+								&lt;span&gt;39&lt;/span&gt;
+								&lt;span class="period"&gt;hour&lt;/span&gt;
+							&lt;/span&gt;
+						&lt;/div&gt;
+						&lt;div class="feature-list"&gt;
+							&lt;ul&gt;
+								&lt;li&gt;Web Development&lt;/li&gt;
+								&lt;li&gt;Advetising&lt;/li&gt;
+								&lt;li&gt;Game Development&lt;/li&gt;
+								&lt;li class="disable"&gt;Music Writing&lt;/li&gt;
+								&lt;li class="disable"&gt;Photography&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/div&gt;
+						&lt;a href="#" class="btn"&gt;
+							&lt;span class="animated-button"&gt;&lt;span&gt;Buy Now&lt;/span&gt;&lt;/span&gt;
+							&lt;i class="icon fas fa-chevron-right"&gt;&lt;/i&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="pricing-item"&gt;
+						&lt;div class="icons"&gt;&lt;i class="fas fa-rocket"&gt;&lt;/i&gt;&lt;/div&gt;
+						&lt;div class="name"&gt;Premium&lt;/div&gt;
+						&lt;div class="amount"&gt;
+							&lt;span class="number"&gt;
+								&lt;span class="dollar"&gt;$&lt;/span&gt;
+								&lt;span&gt;59&lt;/span&gt;
+								&lt;span class="period"&gt;hour&lt;/span&gt;
+							&lt;/span&gt;
+						&lt;/div&gt;
+						&lt;div class="feature-list"&gt;
+							&lt;ul&gt;
+								&lt;li&gt;Web Development&lt;/li&gt;
+								&lt;li&gt;Advetising&lt;/li&gt;
+								&lt;li&gt;Game Development&lt;/li&gt;
+								&lt;li&gt;Music Writing&lt;/li&gt;
+								&lt;li&gt;Photography &lt;strong&gt;new&lt;/strong&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/div&gt;
+						&lt;a href="#" class="btn"&gt;
+							&lt;span class="animated-button"&gt;&lt;span&gt;Buy Now&lt;/span&gt;&lt;/span&gt;
+							&lt;i class="icon fas fa-chevron-right"&gt;&lt;/i&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;!-- navigation --&gt;
+			&lt;div class="navs"&gt;
+				&lt;span class="prev fas fa-chevron-left"&gt;&lt;/span&gt;
+				&lt;span class="next fas fa-chevron-right"&gt;&lt;/span&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_resume" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Resume" sections</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- Section Resume --&gt;
+&lt;div class="section resume" id="section-experience"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Experience&lt;/div&gt;
+			&lt;div class="subtitle"&gt;Working with&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- resume items --&gt;
+		&lt;div class="content-carousel"&gt;
+			&lt;div class="owl-carousel" data-slidesview="2" data-slidesview_mobile="1"&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="resume-item active"&gt;
+						&lt;div class="date"&gt;Present&lt;/div&gt;
+						&lt;div class="name"&gt;The Turin &lt;br /&gt;Olympics&lt;/div&gt;
+						&lt;div class="single-post-text"&gt;
+							&lt;p&gt;
+								Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="resume-item"&gt;
+						&lt;div class="date"&gt;2016-2018&lt;/div&gt;
+						&lt;div class="name"&gt;Red &lt;br /&gt;Drifting&lt;/div&gt;
+						&lt;div class="single-post-text"&gt;
+							&lt;p&gt;
+								Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="resume-item"&gt;
+						&lt;div class="date"&gt;2014-2016&lt;/div&gt;
+						&lt;div class="name"&gt;World &lt;br /&gt;Economy&lt;/div&gt;
+						&lt;div class="single-post-text"&gt;
+							&lt;p&gt;
+								Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="resume-item"&gt;
+						&lt;div class="date"&gt;2012-2014&lt;/div&gt;
+						&lt;div class="name"&gt;Art Director &lt;br /&gt;Facebook&lt;/div&gt;
+						&lt;div class="single-post-text"&gt;
+							&lt;p&gt;
+								Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;!-- navigation --&gt;
+			&lt;div class="navs"&gt;
+				&lt;span class="prev fas fa-chevron-left"&gt;&lt;/span&gt;
+				&lt;span class="next fas fa-chevron-right"&gt;&lt;/span&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Section Resume --&gt;
+&lt;div class="section resume" id="section-education"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Education&lt;/div&gt;
+			&lt;div class="subtitle"&gt;Studied at&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- resume items --&gt;
+		&lt;div class="content-carousel"&gt;
+			&lt;div class="owl-carousel" data-slidesview="2" data-slidesview_mobile="1"&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="resume-item active"&gt;
+						&lt;div class="date"&gt;2011-2012&lt;/div&gt;
+						&lt;div class="name"&gt;Art University &lt;br /&gt;New York&lt;/div&gt;
+						&lt;div class="single-post-text"&gt;
+							&lt;p&gt;
+								Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="resume-item"&gt;
+						&lt;div class="date"&gt;2010-2011&lt;/div&gt;
+						&lt;div class="name"&gt;Programming Course &lt;br /&gt;Paris&lt;/div&gt;
+						&lt;div class="single-post-text"&gt;
+							&lt;p&gt;
+								Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="resume-item"&gt;
+						&lt;div class="date"&gt;2009-2010&lt;/div&gt;
+						&lt;div class="name"&gt;Web Design Course &lt;br /&gt;London&lt;/div&gt;
+						&lt;div class="single-post-text"&gt;
+							&lt;p&gt;
+								Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="resume-item"&gt;
+						&lt;div class="date"&gt;2012-2014&lt;/div&gt;
+						&lt;div class="name"&gt;Art Course &lt;br /&gt;London&lt;/div&gt;
+						&lt;div class="single-post-text"&gt;
+							&lt;p&gt;
+								Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+							&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;!-- navigation --&gt;
+			&lt;div class="navs"&gt;
+				&lt;span class="prev fas fa-chevron-left"&gt;&lt;/span&gt;
+				&lt;span class="next fas fa-chevron-right"&gt;&lt;/span&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Section Design Skills --&gt;
+&lt;div class="section skills" id="section-skills"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Design Skills&lt;/div&gt;
+			&lt;div class="subtitle"&gt;Creative ability&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- skills items --&gt;
+		&lt;div class="skills percent"&gt;
+			&lt;ul&gt;
+				&lt;li&gt;
+					&lt;div class="name"&gt;Web Layout&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="progress"&gt;
+						&lt;div class="percentage" style="width: 90%;"&gt;
+							&lt;span class="percent"&gt;90%&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="name"&gt;Illustrations&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="progress"&gt;
+						&lt;div class="percentage" style="width: 70%;"&gt;
+							&lt;span class="percent"&gt;70%&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="name"&gt;Photoshop&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="progress"&gt;
+						&lt;div class="percentage" style="width: 95%;"&gt;
+							&lt;span class="percent"&gt;95%&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="name"&gt;Graphic Design&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="progress"&gt;
+						&lt;div class="percentage" style="width: 85%;"&gt;
+							&lt;span class="percent"&gt;85%&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Section Languages Skills --&gt;
+&lt;div class="section skills" id="section-skills-lang"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Language Skills&lt;/div&gt;
+			&lt;div class="subtitle"&gt;Reading and writing&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- skills items --&gt;
+		&lt;div class="skills dotted"&gt;
+			&lt;ul&gt;
+				&lt;li&gt;
+					&lt;div class="name"&gt;English&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="progress"&gt;
+						&lt;div class="percentage" style="width: 90%;"&gt;
+							&lt;span class="percent"&gt;90%&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="name"&gt;German&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="progress"&gt;
+						&lt;div class="percentage" style="width: 70%;"&gt;
+							&lt;span class="percent"&gt;70%&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="name"&gt;Italian&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="progress"&gt;
+						&lt;div class="percentage" style="width: 55%;"&gt;
+							&lt;span class="percent"&gt;55%&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="name"&gt;French&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="progress"&gt;
+						&lt;div class="percentage" style="width: 85%;"&gt;
+							&lt;span class="percent"&gt;85%&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Section Coding Skills --&gt;
+&lt;div class="section skills" id="section-skills-code"&gt;
+	&lt;div class="content"&gt;
+		
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Coding Skills&lt;/div&gt;
+			&lt;div class="subtitle"&gt;Developing on&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- skills items--&gt;
+		&lt;div class="skills circles"&gt;
+			&lt;ul&gt;
+				&lt;li&gt;
+					&lt;div class="progress p90"&gt; &lt;!-- p90 = 90% circle fill color --&gt;
+						&lt;div class="percentage"&gt;&lt;/div&gt;
+						&lt;span&gt;90%&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;div class="name"&gt;WordPress&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="progress p75"&gt; &lt;!-- p75 = 75% circle fill color --&gt;
+						&lt;div class="percentage"&gt;&lt;/div&gt;
+						&lt;span&gt;75%&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;div class="name"&gt;PHP, MYSQL&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="progress p85"&gt; &lt;!-- p85 = 85% circle fill color --&gt;
+						&lt;div class="percentage"&gt;&lt;/div&gt;
+						&lt;span&gt;85%&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;div class="name"&gt;JavaScript&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="progress p80"&gt; &lt;!-- p80 = 80% circle fill color --&gt;
+						&lt;div class="percentage"&gt;&lt;/div&gt;
+						&lt;span&gt;80%&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;div class="name"&gt;Angular&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="progress p95"&gt; &lt;!-- p95 = 95% circle fill color --&gt;
+						&lt;div class="percentage"&gt;&lt;/div&gt;
+						&lt;span&gt;95%&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;div class="name"&gt;HTML, CSS&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div class="progress p90"&gt; &lt;!-- p90 = 90% circle fill color --&gt;
+						&lt;div class="percentage"&gt;&lt;/div&gt;
+						&lt;span&gt;90%&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;div class="name"&gt;Python&lt;/div&gt;
+					&lt;div class="single-post-text"&gt;
+						&lt;p&gt;
+							Etiam sit amet orci eget eros faucibus tincidunt.
+						&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Section Testimonials --&gt;
+&lt;div class="section testimonials" id="section-testimonials"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Reviews&lt;/div&gt;
+			&lt;div class="subtitle"&gt;What customers say&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- testimonials items --&gt;
+		&lt;div class="content-carousel"&gt;
+			&lt;div class="owl-carousel" data-slidesView="2" data-slidesview_mobile="1"&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="reviews-item"&gt;
+						&lt;div class="image"&gt;
+							&lt;img src="images/rev1.png" alt=""&gt;
+						&lt;/div&gt;
+						&lt;div class="info"&gt;
+							&lt;div class="name"&gt;Joseph Mackey&lt;/div&gt;
+							&lt;div class="company"&gt;Architect&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="text"&gt;
+							Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday.
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="reviews-item"&gt;
+						&lt;div class="image"&gt;
+							&lt;img src="images/rev1.png" alt=""&gt;
+						&lt;/div&gt;
+						&lt;div class="info"&gt;
+							&lt;div class="name"&gt;James Green&lt;/div&gt;
+							&lt;div class="company"&gt;Art Director&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="text"&gt;
+							Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday.
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="reviews-item"&gt;
+						&lt;div class="image"&gt;
+							&lt;img src="images/rev1.png" alt=""&gt;
+						&lt;/div&gt;
+						&lt;div class="info"&gt;
+							&lt;div class="name"&gt;Joseph Mackey&lt;/div&gt;
+							&lt;div class="company"&gt;Architect&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="text"&gt;
+							Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday.
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="reviews-item"&gt;
+						&lt;div class="image"&gt;
+							&lt;img src="images/rev1.png" alt=""&gt;
+						&lt;/div&gt;
+						&lt;div class="info"&gt;
+							&lt;div class="name"&gt;James Green&lt;/div&gt;
+							&lt;div class="company"&gt;Art Director&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="text"&gt;
+							Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday.
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;!-- navigation --&gt;
+			&lt;div class="navs"&gt;
+				&lt;span class="prev fas fa-chevron-left"&gt;&lt;/span&gt;
+				&lt;span class="next fas fa-chevron-right"&gt;&lt;/span&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+		
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Section Clients --&gt;
+&lt;div class="section clients" id="section-clients"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Clients&lt;/div&gt;
+			&lt;div class="subtitle"&gt;My partners&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- clients items --&gt;
+		&lt;div class="content-carousel"&gt;
+			&lt;div class="owl-carousel" data-slidesview="4" data-slidesview_mobile="2"&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="clients-item"&gt;
+						&lt;a target="_blank" href="#"&gt;
+							&lt;img src="images/client2.png" alt="" /&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="clients-item"&gt;
+						&lt;a target="_blank" href="#"&gt;
+							&lt;img src="images/client3.png" alt="" /&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="clients-item"&gt;
+						&lt;a target="_blank" href="#"&gt;
+							&lt;img src="images/client1.png" alt="" /&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="clients-item"&gt;
+						&lt;a target="_blank" href="#"&gt;
+							&lt;img src="images/client4.png" alt="" /&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="clients-item"&gt;
+						&lt;a target="_blank" href="#"&gt;
+							&lt;img src="images/client2.png" alt="" /&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="clients-item"&gt;
+						&lt;a target="_blank" href="#"&gt;
+							&lt;img src="images/client3.png" alt="" /&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="clients-item"&gt;
+						&lt;a target="_blank" href="#"&gt;
+							&lt;img src="images/client1.png" alt="" /&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class="item"&gt;
+					&lt;div class="clients-item"&gt;
+						&lt;a target="_blank" href="#"&gt;
+							&lt;img src="images/client4.png" alt="" /&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+
+			&lt;!-- navigation --&gt;
+			&lt;div class="navs"&gt;
+				&lt;span class="prev fas fa-chevron-left"&gt;&lt;/span&gt;
+				&lt;span class="next fas fa-chevron-right"&gt;&lt;/span&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+		
+		&lt;div class="clear"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_portfolio" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Portfolio" sections</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;!-- Works --&gt;
+&lt;div class="section works" id="section-portfolio"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Portfolio&lt;/div&gt;
+			&lt;div class="subtitle"&gt;Latest works&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- filter --&gt;
+		&lt;div class="filter-menu"&gt;
+			&lt;div class="filters"&gt;
+				&lt;div class="btn-group"&gt;
+					&lt;label data-text="All" class="glitch-effect"&gt;
+						&lt;input type="radio" name="fl_radio" value=".box-col" /&gt;All
+					&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class="btn-group"&gt;
+					&lt;label data-text="Video"&gt;
+						&lt;input type="radio" name="fl_radio" value=".f-video" /&gt;Video
+					&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class="btn-group"&gt;
+					&lt;label data-text="Music"&gt;
+						&lt;input type="radio" name="fl_radio" value=".f-music" /&gt;Music
+					&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class="btn-group"&gt;
+					&lt;label data-text="Links"&gt;
+						&lt;input type="radio" name="fl_radio" value=".f-links" /&gt;Links
+					&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class="btn-group"&gt;
+					&lt;label data-text="Image"&gt;
+						&lt;input type="radio" name="fl_radio" value=".f-image" /&gt;Image
+					&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class="btn-group"&gt;
+					&lt;label data-text="Gallery"&gt;
+						&lt;input type="radio" name="fl_radio" value=".f-gallery" /&gt;Gallery
+					&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class="btn-group"&gt;
+					&lt;label data-text="Content"&gt;
+						&lt;input type="radio" name="fl_radio" value=".f-content" /&gt;Content
+					&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- portfolio items --&gt;
+		&lt;div class="box-items"&gt;	
+
+			&lt;div class="box-col f-gallery"&gt;
+				&lt;div class="box-item"&gt;
+					&lt;div class="image"&gt;
+						&lt;a href="#gallery-1" class="has-popup-gallery"&gt;
+							&lt;img src="images/works/work1.jpg" alt="" /&gt;
+							&lt;span class="info"&gt;
+								&lt;span class="centrize full-width"&gt;
+									&lt;span class="vertical-center"&gt;
+										&lt;i class="icon fas fa-images"&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							&lt;/span&gt;
+						&lt;/a&gt;
+						&lt;div id="gallery-1" class="mfp-hide"&gt;
+							&lt;a href="images/works/work1.jpg"&gt;&lt;/a&gt;
+							&lt;a href="images/works/work2.jpg"&gt;&lt;/a&gt;
+							&lt;a href="images/works/work3.jpg"&gt;&lt;/a&gt;
+							&lt;a href="images/works/work4.jpg"&gt;&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="desc"&gt;
+						&lt;div class="category"&gt;Gallery&lt;/div&gt;
+						&lt;a href="#gallery-1" class="name has-popup-gallery"&gt;Alabaster Complete Collection&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="box-col f-video"&gt;
+				&lt;div class="box-item"&gt;
+					&lt;div class="image"&gt;
+						&lt;a href="https://youtu.be/S4L8T2kFFck" class="has-popup-video"&gt;
+							&lt;img src="images/works/work2.jpg" alt="" /&gt;
+							&lt;span class="info"&gt;
+								&lt;span class="centrize full-width"&gt;
+									&lt;span class="vertical-center"&gt;
+										&lt;i class="icon fas fa-video"&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="desc"&gt;
+						&lt;div class="category"&gt;Video&lt;/div&gt;
+						&lt;a href="https://youtu.be/S4L8T2kFFck" class="name has-popup-video"&gt;Book of John Paper&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="box-col f-image"&gt;
+				&lt;div class="box-item"&gt;
+					&lt;div class="image"&gt;
+						&lt;a href="images/works/work7.jpg" class="has-popup-image"&gt;
+							&lt;img src="images/works/work7.jpg" alt="" /&gt;
+							&lt;span class="info"&gt;
+								&lt;span class="centrize full-width"&gt;
+									&lt;span class="vertical-center"&gt;
+										&lt;i class="icon fas fa-image"&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="desc"&gt;
+						&lt;div class="category"&gt;Image&lt;/div&gt;
+						&lt;a href="images/works/work7.jpg" class="name has-popup-image"&gt;White Rose Photo&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="box-col f-image"&gt;
+				&lt;div class="box-item"&gt;
+					&lt;div class="image"&gt;
+						&lt;a href="images/works/work4.jpg" class="has-popup-image"&gt;
+							&lt;img src="images/works/work4.jpg" alt="" /&gt;
+							&lt;span class="info"&gt;
+								&lt;span class="centrize full-width"&gt;
+									&lt;span class="vertical-center"&gt;
+										&lt;i class="icon fas fa-image"&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="desc"&gt;
+						&lt;div class="category"&gt;Image&lt;/div&gt;
+						&lt;a href="images/works/work4.jpg" class="name has-popup-image"&gt;Honest Company&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="box-col f-gallery"&gt;
+				&lt;div class="box-item"&gt;
+					&lt;div class="image"&gt;
+						&lt;a href="#gallery-2" class="has-popup-gallery"&gt;
+							&lt;img src="images/works/work5.jpg" alt="" /&gt;
+							&lt;span class="info"&gt;
+								&lt;span class="centrize full-width"&gt;
+									&lt;span class="vertical-center"&gt;
+										&lt;i class="icon fas fa-images"&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							&lt;/span&gt;
+						&lt;/a&gt;
+						&lt;div id="gallery-2" class="mfp-hide"&gt;
+							&lt;a href="images/works/work5.jpg"&gt;&lt;/a&gt;
+							&lt;a href="images/works/work2.jpg"&gt;&lt;/a&gt;
+							&lt;a href="images/works/work3.jpg"&gt;&lt;/a&gt;
+							&lt;a href="images/works/work4.jpg"&gt;&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="desc"&gt;
+						&lt;div class="category"&gt;Gallery&lt;/div&gt;
+						&lt;a href="#gallery-2" class="name has-popup-gallery"&gt;Brown Short Dog&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="box-col f-music"&gt;
+				&lt;div class="box-item"&gt;
+					&lt;div class="image"&gt;
+						&lt;a href="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&#038;show_artwork=true" class="has-popup-music"&gt;
+							&lt;img src="images/works/work6.jpg" alt="" /&gt;
+							&lt;span class="info"&gt;
+								&lt;span class="centrize full-width"&gt;
+									&lt;span class="vertical-center"&gt;
+										&lt;i class="icon fas fa-music"&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="desc"&gt;
+						&lt;div class="category"&gt;Music&lt;/div&gt;
+						&lt;a href="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&#038;show_artwork=true" class="name has-popup-music"&gt;Brown Concrete Building&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="box-col f-links"&gt;
+				&lt;div class="box-item"&gt;
+					&lt;div class="image"&gt;
+						&lt;a href="https://beshley.com/" class="has-popup-link" target="_blank"&gt;
+							&lt;img src="images/works/work3.jpg" alt="" /&gt;
+							&lt;span class="info"&gt;
+								&lt;span class="centrize full-width"&gt;
+									&lt;span class="vertical-center"&gt;
+										&lt;i class="icon fas fa-link"&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="desc"&gt;
+						&lt;div class="category"&gt;Links&lt;/div&gt;
+						&lt;a href="https://beshley.com/" class="name has-popup-link"&gt;Black Car&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class="box-col f-content"&gt;
+				&lt;div class="box-item"&gt;
+					&lt;div class="image"&gt;
+						&lt;a href="#popup-1" class="has-popup-media"&gt;
+							&lt;img src="images/works/work8.jpg" alt="" /&gt;
+							&lt;span class="info"&gt;
+								&lt;span class="centrize full-width"&gt;
+									&lt;span class="vertical-center"&gt;
+										&lt;i class="icon fas fa-plus"&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="desc"&gt;
+						&lt;div class="category"&gt;Content&lt;/div&gt;
+						&lt;a href="#popup-1" class="name has-popup-media"&gt;Yellow and Blue Striped&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div id="popup-1" class="popup-box mfp-fade mfp-hide"&gt;
+						&lt;div class="content"&gt;
+							&lt;div class="image"&gt;
+								&lt;img src="images/works/work8.jpg" alt=""&gt;
+							&lt;/div&gt;
+							&lt;div class="desc"&gt;
+								&lt;div class="category"&gt;Content&lt;/div&gt;
+								&lt;h4&gt;Yellow and Blue Striped&lt;/h4&gt;
+								&lt;p&gt;
+									Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata 
+									suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+								&lt;/p&gt;
+								&lt;a href="#" class="btn"&gt;
+									&lt;span class="animated-button"&gt;&lt;span&gt;View Project&lt;/span&gt;&lt;/span&gt;
+									&lt;i class="icon fas fa-chevron-right"&gt;&lt;/i&gt;
+								&lt;/a&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class="clear"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="html_structure_contacts" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Contact" sections</h2>		
+				<pre class="code language-html">
+					<code>  
+&lt;!-- Section Contacts Info &gt;--&gt;
+&lt;div class="section contacts" id="section-contacts"&gt;
+	&lt;div class="content"&gt;
+
+		&lt;!-- title --&gt;
+		&lt;div class="titles"&gt;
+			&lt;div class="title"&gt;Contact&lt;/div&gt;
+			&lt;div class="subtitle"&gt;Let's talk&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- contact form --&gt;
+		&lt;div class="contact-form"&gt;
+			&lt;form id="cform" method="post"&gt;
+				&lt;div class="group-val"&gt;
+					&lt;div class="label"&gt;Full name &lt;strong&gt;*&lt;/strong&gt;&lt;/div&gt;
+						&lt;input type="text" name="name" placeholder="ej.: Genoveva Lian Hullt" /&gt;
+				&lt;/div&gt;
+				&lt;div class="group-val"&gt;
+					&lt;div class="label"&gt;Email address &lt;strong&gt;*&lt;/strong&gt;&lt;/div&gt;
+					&lt;input type="email" name="email" placeholder="example@domain.com" /&gt;
+				&lt;/div&gt;
+				&lt;div class="group-val"&gt;
+					&lt;div class="label"&gt;Message &lt;strong&gt;*&lt;/strong&gt;&lt;/div&gt;
+					&lt;textarea name="message" placeholder="To Write"&gt;&lt;/textarea&gt;
+				&lt;/div&gt;
+				&lt;div class="group-bts"&gt;
+					&lt;button type="submit" class="btn"&gt;
+						&lt;span class="animated-button"&gt;&lt;span&gt;Send Message&lt;/span&gt;&lt;/span&gt;
+						&lt;i class="icon fas fa-chevron-right"&gt;&lt;/i&gt;
+					&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+			&lt;div class="alert-success"&gt;
+				&lt;p&gt;Thanks, your message is sent successfully.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;!-- contact info --&gt;
+		&lt;div class="contact-info"&gt;
+			&lt;div class="name"&gt;Joe Wilson&lt;/div&gt;
+			&lt;div class="subname"&gt;Consultant & Mentor&lt;/div&gt;
+			&lt;div class="info-list"&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;strong&gt;Age:&lt;/strong&gt; 24&lt;/li&gt;
+					&lt;li&gt;&lt;strong&gt;Residence:&lt;/strong&gt; USA&lt;/li&gt;
+					&lt;li&gt;&lt;strong&gt;Freelance:&lt;/strong&gt; Available&lt;/li&gt;
+					&lt;li&gt;&lt;strong&gt;Address:&lt;/strong&gt; San Francisco&lt;/li&gt;
+					&lt;li&gt;&lt;strong&gt;Phone:&lt;/strong&gt; +1 256 254 84 56&lt;/li&gt;
+					&lt;li&gt;&lt;strong&gt;E-mail:&lt;/strong&gt; alejandroa@gmail.com&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			&lt;div class="author"&gt;Joe Wilson&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class="clear"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="icons" class="dt-section">
+				<h2 class="dt-title">Icons</h2>
+				<p>
+					In this template are defined some of classes for icons, your can see all icons here - https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free
+				</p>
+			</article>
+			<article id="credits" class="dt-section">
+				<h2 class="dt-title">Sourse & Credits</h2>
+				<h3>Scripts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Animate.css</span> <a target="_blank" href="https://daneden.github.io/animate.css/">https://daneden.github.io/animate.css/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery</span> <a target="_blank" href="https://jquery.com/">https://jquery.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Isotope</span> <a target="_blank" href="https://isotope.metafizzy.co/">https://isotope.metafizzy.co/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">imagesLoaded</span> <a target="_blank" href="http://imagesloaded.desandro.com/">http://imagesloaded.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">jQuery Validation Plugin</span> <a target="_blank" href="http://jqueryvalidation.org/">http://jqueryvalidation.org/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Magnific Popup</span> <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Swiper</span> <a target="_blank" href="https://swiperjs.com/">https://swiperjs.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Owl Carousel</span> <a target="_blank" href="https://owlcarousel2.github.io/OwlCarousel2/">https://owlcarousel2.github.io/OwlCarousel2/</a>
+					</li>
+                    <li>
+						<span class="dt-label dt-label_bold">Jarallax.js</span> <a target="_blank" href="https://github.com/nk-o/jarallax">https://github.com/nk-o/jarallax</a>
+					</li>
+                    <li>
+						<span class="dt-label dt-label_bold">Typed.js</span> <a target="_blank" href="https://mattboldt.com">https://mattboldt.com</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Velocity.js</span> <a target="_blank" href="https://github.com/julianshapiro/velocity">https://github.com/julianshapiro/velocity</a>
+					</li>
+				</ul>
+				<h3>Fonts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Poppins</span>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Mr Dafoe</span>
+					</li>
+                    <li>
+						<span class="dt-label dt-label_bold">FontAwesome - </span> <a target="_blank" href="https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free">https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free</a>
+					</li>
+				</ul>
+				<h3>Images</h3>
+				<p>Any Images or logos used in previews are not included in this item or final purchase.</p>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Unsplash</span> <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Graphicburger</span> <a target="_blank" href="http://graphicburger.com/">http://graphicburger.com/</a>
+					</li>
+				</ul>
+			</article>		
+		</div>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script> 
+</body>
+</html>
